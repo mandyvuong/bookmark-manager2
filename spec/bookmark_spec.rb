@@ -1,10 +1,11 @@
-# require 'bookmark'
+require 'bookmark'
 
-# describe Bookmark do
-#   let(:bookmark) { Bookmark.new }
-#   let(:test) { double :test } 
-
-#   it 'is able to view all bookmarks' do
-#     expect(subject.all).to include("https://github.com/makersacademy", "https://www.google.com/")
-#   end
-# end
+describe Bookmark do
+  describe '#all' do
+    it 'returns all bookmarks' do
+      bookmarks = Bookmark.all
+      expect(bookmarks).to include("https://github.com/makersacademy")
+      expect(bookmarks).to include("https://www.theguardian.com/uk")
+    end
+  end
+end

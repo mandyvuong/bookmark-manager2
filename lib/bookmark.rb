@@ -1,11 +1,8 @@
-# class Bookmark
-# attr_reader :bookmarks
-
-#   def initialize
-#     @bookmarks = ["https://github.com/makersacademy", "https://www.google.com/"]
-#   end
-
-#   def all
-#     @bookmarks.join(" ")
-#   end
-# end
+class Bookmark
+  def self.all
+    [
+      "https://github.com/makersacademy",
+      "https://www.theguardian.com/uk"
+    ]
+  end
+end
