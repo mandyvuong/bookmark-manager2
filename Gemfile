@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'webrick'
+gem 'pg'
 
 group :test do
   gem 'capybara'
@@ -16,3 +17,4 @@ end
 group :development, :test do
   gem 'rubocop', '1.20'
 end
+
